@@ -1,0 +1,155 @@
+body {
+  border: 2px solid black;
+  background-color: bisque;
+  margin: 0;
+}
+
+h1,
+h2,
+p,
+nav {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: rgb(172, 172, 197);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  height: 50%;
+}
+
+.nav-right {
+  width: 80%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: chocolate;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+li:hover {
+  background-color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(81, 89, 164, 1) 0%,
+    rgba(9, 73, 121, 1) 51%
+  );
+}
+
+#duck {
+  display: flex;
+  background-color: aqua;
+  border: 0;
+}
+
+.text {
+  background-color: gray;
+  flex-direction: column;
+  text-shadow: 1px 1px 2px pink;
+  text-transform: uppercase;
+}
+
+.text p {
+}
+
+.duck {
+  overflow: hidden;
+}
+
+#emergency {
+  border: 2px solid blue;
+  background-color: red;
+}
+
+.grid-container {
+  border: 2px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: blueviolet;
+  color: white;
+}
+.grid-item:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.grid-item {
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+footer,
+.github {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#contact,
+.contact,
+.form {
+  background-color: purple;
+  border: solid greenyellow;
+}
+.github {
+  width: 300px;
+  justify-content: center;
+}
+.submit {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.submit {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+.submit:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
